@@ -1,0 +1,28 @@
+snippet f
+  function(${1}) {${0://body}};
+
+snippet des
+  describe('${1:Description}', function() {
+          ${0}
+  });
+
+snippet it
+  it('${1:does something}', function() {
+          ${0}
+  });
+
+snippet exp
+  expect(${1:value}).toBe(${2:result});
+
+snippet bef
+  beforeEach(function() {
+          ${0}
+  });
+
+snippet log
+    console.log('${1}');
+    ${0}
+
+snippet us
+    "use strict";
+    $0
