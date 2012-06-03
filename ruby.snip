@@ -1,0 +1,47 @@
+snippet tas
+  desc "${1:Task description\}"
+  task :${2:task_name => [:dependent, :tasks]} do
+    ${0}
+  end
+snippet #
+  #{${1}}${0}
+snippet enc
+  # encoding: UTF-8
+  ${0}
+snippet defi
+  def initialize
+    ${0}
+  end
+snippet defc
+  def self.${1:method_name}
+    ${0}
+  end
+snippet des
+  describe '${1:Description}' do
+    ${0}
+  end
+snippet con
+  context '${1:Description}' do
+    ${0}
+  end
+snippet it
+  it '${1:does something}' do
+    ${0}
+  end
+snippet itp
+  it '${1:does something}'
+snippet bef
+  before do
+    ${0}
+  end
+snippet befa
+  before :all do
+    ${0}
+  end
+snippet fep
+  File.expand_path('${1:Filename}', __FILE__)
+snippet its
+  its(:${1}) { should eq(${0}) }
+snippet let
+  let(:${1}) { ${0} }
+
