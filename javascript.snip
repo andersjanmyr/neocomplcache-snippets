@@ -1,5 +1,10 @@
 snippet f
-  function(${1}) {${0://body}};
+  function(${1}) {${0://body}}
+
+snippet fu
+  function(${1}) {
+    ${0://body}
+  }
 
 snippet des
   describe('${1:Description}', function() {
@@ -19,6 +24,11 @@ snippet bef
           ${0}
   });
 
+snippet aft
+  afterEach(function() {
+          ${0}
+  });
+
 snippet log
     console.log('${1}');
     ${0}
@@ -26,3 +36,14 @@ snippet log
 snippet us
     "use strict";
     $0
+
+snippet st
+    setTimeout(function() {
+        ${0}
+    }, 1000);
+
+snippet si
+    setInterval(function() {
+        ${0}
+    }, 1000);
+
